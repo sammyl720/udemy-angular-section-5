@@ -7,13 +7,12 @@ import { Component } from "@angular/core";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  count: number = 0
+  countList: number[] = []
   handleUpdate(event: { count: number }) {
-    this.count = event.count
-    console.log('app count' + event.count + "this count" + this.count)
-  }
+    this.countList.push(event.count)
+    }
 
-  countIsEven(): boolean {
-    return this.count % 2 === 0
+  countIsEven(count:number): boolean {
+    return count % 2 === 0
   }
 }

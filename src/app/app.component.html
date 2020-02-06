@@ -1,11 +1,15 @@
 <div class="container">
-    <app-game-controller (update)="handleUpdate($event)"></app-game-controller>
+    <div class="row m-4 d-flex justify-content-center bg-dark" style="display:flex; justify-content:space-evenly; padding:5px; margin:5px;width:100%;">
+        <app-game-controller (update)="handleUpdate($event)"></app-game-controller>
+    </div>
     <div class="row">
-        <div class="col-12" *ngIf="countIsEven()">
-            <app-even [count]="count"></app-even>
-        </div>
-        <div class="col-12" *ngIf="!countIsEven()">
-            <app-odd [count]="count"></app-odd>
+        <div *ngFor="let count of countList">
+            <div class="col-xs-6 p-2" *ngIf="countIsEven(count)">
+                <app-even [count]="count"></app-even>
+            </div>
+            <div class="col-xs-6 p-2" *ngIf="!countIsEven(count)">
+                <app-odd [count]="count"></app-odd>
+            </div>
         </div>
     </div>
 </div>
