@@ -1,27 +1,10 @@
-# MyFirstApp
+### Bind it!
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. Create three new Component: GameController, odd and Even.
+1. The GameController should have button to start and stop the game
+1. When starting the game, an event (holding an incrementing number) should get Emitted each second
+1. The event should be listenable from outside components
+1. When stopping the game no more events should be emitted
+1. a new odd component should be created with each odd number emitted, the same should happen for even component
+1. simply output odd numbers or even numbers in the respective components
+1. Style the elements (paragraphs) holding your output text differently in both component
