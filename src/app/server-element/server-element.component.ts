@@ -1,11 +1,13 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, ViewEncapsulation } from "@angular/core";
 
 @Component({
   selector: "app-server-element",
-  templateUrl: "./server-element.component.html"
+  templateUrl: "./server-element.component.html",
+  styleUrls: ["./server-element.component.css"],
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class ServerElementComponent {
-  @Input('srvElement') element: {
+  @Input("srvElement") element: {
     type: string;
     name: string;
     content: string;

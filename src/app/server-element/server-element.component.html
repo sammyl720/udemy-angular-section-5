@@ -1,6 +1,6 @@
-<div class="panel panel-default">
-  <div class="panel-heading">{{ element.name }}</div>
-  <div class="panel-body">
+<div class="card" style="width:100%;margin-bottom:5px;">
+  <div class="card-header">{{ element.name }}</div>
+  <div class="card-body">
     <p>
       <strong *ngIf="element.type === 'server'" style="color: red"
         >{{ element.content }}</strong
